@@ -101,4 +101,4 @@ DEPENDENCIES
   middleman-autoprefixer
   rails-assets-angular (~> 1.2.0)
   slim
-  wdm (>= 0.1.0)
+  wdm (~> 0.1.0)

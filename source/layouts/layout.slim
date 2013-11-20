@@ -8,5 +8,6 @@ html
     = javascript_include_tag 'application'
 
   body class=page_classes
-    = yield
-    = partial 'shared/footer'
+    div class="container"
+      = yield
+      = partial 'shared/footer'

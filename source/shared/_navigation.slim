@@ -1,0 +1,12 @@
+ul class="nav nav-pills nav-stacked well"
+  - menu_items.each do |item|
+    -if item[:selected] == true
+      li class="active"
+        a href="#" class="btn btn-lg btn-block"
+          span> class="glyphicon glyphicon-#{item[:icon]}"
+          ="#{item[:text]}"
+    -else
+      li
+        a href="#" class="btn btn-default btn-lg btn-block"
+          span> class="glyphicon glyphicon-#{item[:icon]}"
+          ="#{item[:text]}"

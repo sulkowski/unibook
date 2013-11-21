@@ -2,16 +2,4 @@
 title: Dashboard
 ---
 
-- menu_items = [{ :text => "Messages", :icon => "envelope", :selected => true },
-                { :text => "Schedule", :icon => "calendar" },
-                { :text => "Grading", :icon => "pencil" },
-                { :text => "Personal information", :icon => "edit" }]
-
-= partial 'shared/header'
-
-div class="row"
-  div class="col-md-3"
-    = partial '../shared/navigation', :locals => { :menu_items => menu_items }
-  div class="col-md-9"
-    div class="well"
-      h2 Header
+= current_page.data.title

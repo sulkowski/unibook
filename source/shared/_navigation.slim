@@ -1,12 +1,23 @@
 ul class="nav nav-pills nav-stacked"
-  - menu_items.each do |item|
-    -if item[:selected] == true
-      li class="active"
-        a href="#" class="btn btn-lg btn-block"
-          span> class="glyphicon glyphicon-#{item[:icon]}"
-          ="#{item[:text]}"
-    -else
-      li
-        a href="#" class="btn btn-default btn-lg btn-block"
-          span> class="glyphicon glyphicon-#{item[:icon]}"
-          ="#{item[:text]}"
+
+  li class=active?('student/index', 'teacher/index')
+    a href="/#{current_section}/" #{icon('home')} Home
+  li class=active?('student/messages', 'teacher/messages')
+    a href="/student/messages/" #{icon('envelope')} Messages
+  li class=active?('student/schedule', 'teacher/schedule')
+    a href="/student/schedule/" #{icon('calendar')} Schedule
+
+  - if teacher_section?
+    li class=active?('teacher/grading')
+      a href="/teacher/grading/" #{icon('pencil')} Grading
+
+  - if student_section?
+    li class=active?('student/book')
+      a href="/student/book/" #{icon('book')} Index Book
+    li class=active?('student/enrollment')
+      a href="/student/enrollment/" #{icon('list-alt')} Enrollment
+    li class=active?('student/requests')
+      a href="/student/requests/" #{icon('paperclip')} Requests
+
+  li class=active?('student/profile', 'teacher/profile')
+    a href="/student/profile/" #{icon('user')} Personal Information

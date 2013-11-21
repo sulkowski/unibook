@@ -8,6 +8,10 @@ html
     = javascript_include_tag 'application'
 
   body class=page_classes
-    div class="container"
-      = yield
-      = partial 'shared/footer'
+    .container
+      .row= partial 'shared/header'
+      .row
+        .col-md-3= partial 'shared/navigation'
+        .col-md-9
+          .well= yield
+      .row= partial 'shared/footer'

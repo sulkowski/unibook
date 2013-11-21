@@ -9,7 +9,14 @@ title: Dashboard
                 { :text => "Requests", :icon => "paperclip" },
                 { :text => "Personal information", :icon => "edit" }]
 
-= partial 'shared/header'
+- breadcrumb_items = [{ :href => "/", :text => "Home"},
+                      { :text => "Dashboard"}]
+
+= partial '../shared/header'
+
+div class="row"
+  div class="col-md-12"
+    = partial '../shared/breadcrumb', :locals => { :breadcrumb_items => breadcrumb_items }
 
 div class="row"
   div class="col-md-3"

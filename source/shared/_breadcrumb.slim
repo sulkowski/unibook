@@ -1,0 +1,7 @@
+ol class="breadcrumb"
+  - breadcrumb_items.each_with_index do |item, index|
+    -if index == breadcrumb_items.size - 1
+      li class="active" #{item[:text]}
+    -else
+      li
+        a href="#{item[:href]}" #{item[:text]}

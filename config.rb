@@ -49,6 +49,8 @@ helpers do
   end
 
   def breadcrumbs
+    return '' if active?('student/index', 'teacher/index') == 'active'
+
     # rozpierdol.rb
     breadcrumbs = current_page.data.breadcrumbs || [current_page.data.title || 'No name']
     html = "<ol class=\"breadcrumb\"><li><a href=\"/#{current_section}/\">Home</a></li>"

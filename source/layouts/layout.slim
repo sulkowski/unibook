@@ -7,5 +7,8 @@ html
       .row
         .col-md-3= partial 'shared/navigation'
         .col-md-9
-          .well= yield
+          - if current_page.path.start_with?('student/index', 'teacher/index')
+            = yield
+          - else
+            .well = yield
       .row= partial 'shared/footer'

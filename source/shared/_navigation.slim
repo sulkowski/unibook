@@ -3,9 +3,9 @@ ul class="nav nav-pills nav-stacked"
   li class=active?('student/index', 'teacher/index')
     a href="/#{current_section}/" #{icon('home')} Home
   li class=active?('student/messages', 'teacher/messages')
-    a href="/student/messages/" #{icon('envelope')} Messages
+    a href="/#{current_section}/messages/" #{icon('envelope')} Messages
   li class=active?('student/schedule', 'teacher/schedule')
-    a href="/student/schedule/" #{icon('calendar')} Schedule
+    a href="/#{current_section}/schedule/" #{icon('calendar')} Schedule
 
   - if teacher_section?
     li class=active?('teacher/grading')
@@ -13,11 +13,11 @@ ul class="nav nav-pills nav-stacked"
 
   - if student_section?
     li class=active?('student/book')
-      a href="/student/book/" #{icon('book')} Index Book
+      a href="/#{current_section}/book/" #{icon('book')} Index Book
     li class=active?('student/enrollment')
-      a href="/student/enrollment/" #{icon('list-alt')} Enrollment
+      a href="/#{current_section}/enrollment/" #{icon('list-alt')} Enrollment
     li class=active?('student/requests')
-      a href="/student/requests/" #{icon('paperclip')} Requests
+      a href="/#{current_section}/requests/" #{icon('paperclip')} Requests
 
   li class=active?('student/profile', 'teacher/profile')
-    a href="/student/profile/" #{icon('user')} Personal Information
+    a href="/#{current_section}/profile/" #{icon('user')} Personal Information

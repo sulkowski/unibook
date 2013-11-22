@@ -1,12 +1,6 @@
 doctype html
 html
-  head
-    meta charset="utf-8"
-    title= (current_page.data.title ? current_page.data.title + ' · ' : '') + 'Unibook'
-
-    = stylesheet_link_tag 'application', :media => 'all'
-    = javascript_include_tag 'application'
-
+  head= partial 'shared/head'
   body class=page_classes
     .container
       .row= partial 'shared/header'

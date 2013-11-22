@@ -1,7 +1,38 @@
+/ .container
+/   .row
+/     .col-md-3
+/       .well Logo
+/     .col-md-9
+/       .well Other content
+/       = breadcrumbs
+
+
 .container
   .row
     .col-md-3
       .well Logo
     .col-md-9
-      .well Other content
+      .well.clearfix
+        p.text-right 
+          | Logged as: 
+          a href="/student/profile/" Dominik Porada 
+          | | 
+          a href="#" Change password 
+          | | 
+          a href="/" Sign out
+        .pull-right
+          | Studies: 
+          .btn-group
+            button.btn.btn-default.btn-sm.dropdown-toggle type="button" data-toggle="dropdown"
+              | W8-INFANG-1234 
+              span.caret
+              span.sr-only Toggle Dropdown
+            ul.dropdown-menu role="menu"
+              li
+                a href="#" Action 1
+              li
+                a href="#" Action 2
+              li
+                a href="#" Action 3
+              li.divider
       = breadcrumbs

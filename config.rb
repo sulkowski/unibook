@@ -47,4 +47,15 @@ helpers do
   def icon(name)
     "<span class=\"icon glyphicon glyphicon-#{name}\"></span>"
   end
+
+  def breadcrumbs
+    # rozpierdol.rb
+    breadcrumbs = current_page.data.breadcrumbs || [current_page.data.title || 'No name']
+    html = "<ol class=\"breadcrumb\"><li><a href=\"/#{current_section}/\">Home</a></li>"
+    if breadcrumbs.length > 1
+      path = current_page.path.split('/')[1] || '#'
+      html += "<li><a href=\"/#{current_section}/#{path}/\">#{breadcrumbs.first}</a></li>"
+    end
+    "#{html}<li class=\"active\">#{breadcrumbs.last}</li></ol>"
+  end
 end

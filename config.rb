@@ -50,9 +50,9 @@ helpers do
 
   def breadcrumbs
     if active?('student/index', 'teacher/index') == 'active'
-      return '<ol class="breadcrumb" style="visibility: hidden"><li class="active">Home</li></ol>'
+      return '<ol class="breadcrumb invisible"><li class="active">Home</li></ol>'
     end
-  
+
     # rozpierdol.rb
     breadcrumbs = current_page.data.breadcrumbs || [current_page.data.title || 'No name']
     html = "<ol class=\"breadcrumb\"><li><a href=\"/#{current_section}/\">Home</a></li>"

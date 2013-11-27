@@ -1,10 +1,9 @@
 .container
   .row
     .col-md-3
-      a href="/#{current_section}/"
-        img.img-responsive.img-rounded src="http://placehold.it/270x160/428BCA/f5f5f5/&text=UniBook" alt="UniBook"
+      a href="/#{current_section}/"= image_tag 'logo.png', width: 120, height: 50, alt: 'Unibook', title: 'Go to Dashboard', class: 'img logo'
     .col-md-9
-      .well.clearfix
+      .header.clearfix
         p.text-right
           | Logged as:
           a<> href="/student/profile/" Dominik Porada

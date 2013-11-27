@@ -2,23 +2,19 @@
 title: Index book
 ---
 
-h3 = current_page.data.title
-
-.pull-right
-  | Semester:
-  .btn-group
-    button.btn.btn-default.btn-sm.dropdown-toggle type="button" data-toggle="dropdown"
-      | Winter 2010/2011
-      span.caret<
-    ul.dropdown-menu role="menu"
-      li.active
-        a href="#" Winter 2010/2011
-      li
-        a href="#" Summer 2010/2011
-      li
-        a href="#" Winter 2011/2012
-      li
-        a href="#" Summer 2011/2013
+.row
+  .col-md-6
+    h3 = current_page.data.title
+  .col-md-6
+    form.form-horizontal role="form"
+      .form-group
+        label.control-label.col-md-3.col-md-offset-3 for="select" Filter:
+        .col-md-6
+          select.form-control type="search" id="select"
+            option.form-control value="w1" Winter 2010/2011
+            option.form-control value="s1" Summer 2010/2011
+            option.form-control value="w2" Winter 2011/2012
+            option.form-control value="s2" Summer 2011/2012
 
 table.table.table-striped
   thead

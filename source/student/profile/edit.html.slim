@@ -5,57 +5,43 @@ breadcrumbs:
   - Edit
 ---
 
-h3 = current_page.data.title
-
 .row
-  .col-md-3
-    p.text-right
-      | Username:
-  .col-md-6
-    input type="text" class="form-control" id="username" value="dominikporada"
+  .col-md-12
+    h3 = current_page.data.title
 
-.row
-  .col-md-3
-    p.text-right
-      | E-mail:
-  .col-md-6
-    input type="email" class="form-control" id="email" value="dominik@porada.co"
 
-.row
-  .col-md-3
-    p.text-right
-      | Photo:
-  .col-md-6
-    a href="#"
-      img.img-responsive.img-rounded src="http://placehold.it/200x220/428BCA/f5f5f5/&text=Photo" alt="Photo"
-
-.row
-  .col-md-3
-    p.text-right
-      | Name:
-  .col-md-6
-    input type="text" class="form-control" id="name" value="Dominik Porada"
-
-.row
-  .col-md-3
-    p.text-right
-      | PESEL:
-  .col-md-6
-    input type="number" class="form-control" id="username" value="0123456789"
-
-.row
-  .col-md-3
-    p.text-right
-      | Address:
-  .col-md-6
-    textarea class="form-control"
-      | Line 1
-        Line 2
-        Line 3
-
-.row
-  .col-md-6.col-md-offset-4
-    .col-md-2.col-md-offset-2
-      a.btn.btn-primary Save
-    .col-md-2
-      a.btn.btn-primary Cancel
+form.form-horizontal role="form"
+  .form-group
+    label.control-label.col-md-3 for="username" Username:
+    .col-md-6
+      input type="text" class="form-control" id="username" value="dominikporada"
+  .form-group
+    label.control-label.col-md-3 for="email" E-mail:
+    .col-md-6
+      input type="email" class="form-control" id="email" value="dominik@porada.co"
+  .form-group
+    label.control-label.col-md-3 Photo:
+    .col-md-3
+      a href="#"
+        img.img-responsive.img-rounded src="http://placehold.it/200x220/428BCA/f5f5f5/&text=Photo" alt="Photo"
+  .form-group
+    label.control-label.col-md-3 for="name" Name:
+    .col-md-6
+      input type="text" class="form-control" id="name" value="Dominik Porada"
+  .form-group
+    label.control-label.col-md-3 for="name" PESEL:
+    .col-md-6
+      input type="number" class="form-control" id="pesel" value="0123456789"
+  .form-group
+    label.control-label.col-md-3 Address:
+    .col-md-6
+      textarea.form-control rows="3"
+        | Line 1
+          Line 2
+          Line 3
+  .form-group
+    .col-md-6.col-md-offset-4
+      .col-md-2.col-md-offset-2
+        a.btn.btn-primary href="./index.html" Save
+      .col-md-2
+        a.btn.btn-primary href="./index.html" Cancel

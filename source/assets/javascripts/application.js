@@ -2,3 +2,8 @@
 //= require bootstrap
 //= require angular
 //= require_tree .
+
+function go(url)
+{
+   document.location.href = url;
+}

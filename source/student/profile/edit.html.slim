@@ -34,7 +34,6 @@ h3 = current_page.data.title
     p.text-right
       | Name:
   .col-md-6
-    p
     input type="text" class="form-control" id="name" value="Dominik Porada"
 
 .row
@@ -42,7 +41,6 @@ h3 = current_page.data.title
     p.text-right
       | PESEL:
   .col-md-6
-    p
     input type="number" class="form-control" id="username" value="0123456789"
 
 .row
@@ -50,9 +48,10 @@ h3 = current_page.data.title
     p.text-right
       | Address:
   .col-md-6
-    textarea
+    textarea class="form-control"
       | Line 1
-      | Line 2
+        Line 2
+        Line 3
 
 .row
   .col-md-6.col-md-offset-4

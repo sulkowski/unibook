@@ -15,36 +15,60 @@ ul.nav.nav-tabs.nav-justified
     a href="#sent" data-toggle="tab" Sent
 
 .tab-content
-  .tab-pane.fade.in.active id="inbox"
+  .tab-pane.active id="inbox"
     table.table.table-striped
       thead
         tr
           th From
-          th Content
+          th Topic
       tbody
         tr.tr-link.unread onclick="go('./message.html')"
           td Paweł Sułkowski
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
+          td What's up?
         tr.tr-link.unread onclick="go('./message.html')"
           td Dominika Cis
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
-        tr.tr-link.unread onclick="go('./message.html')"
+          td Lorem ipsum
+        tr.tr-link onclick="go('./message.html')"
           td Paweł Sułkowski
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
+          td Lorem ipsum
         tr.tr-link onclick="go('./message.html')"
           td Dominika Cis
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        tr.tr-link onclick="go('./message.html')"
+          td Paweł Sułkowski
+          td Lorem ipsum
+        tr.tr-link onclick="go('./message.html')"
+          td Dominika Cis
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .row
+      .col-md-12.text-right
+        a href="#" Older messages
 
-  .tab-pane.fade id="sent"
+  .tab-pane id="sent"
     table.table.table-striped
       thead
         tr
           th To
-          th Content
+          th Topic
       tbody
         tr.tr-link onclick="go('./message.html')"
           td Paweł Sułkowski
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
+          td Re: What's up?
         tr.tr-link onclick="go('./message.html')"
           td Dominika Cis
-          td Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna est, dapibus a viverra aliquet, tempus nec justo. Donec eu euismod libero. Donec non lacinia nulla.
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        tr.tr-link onclick="go('./message.html')"
+          td Paweł Sułkowski
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        tr.tr-link onclick="go('./message.html')"
+          td Dominika Cis
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        tr.tr-link onclick="go('./message.html')"
+          td Paweł Sułkowski
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        tr.tr-link onclick="go('./message.html')"
+          td Dominika Cis
+          td Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .row
+      .col-md-12.text-right
+        a href="#" Older messages

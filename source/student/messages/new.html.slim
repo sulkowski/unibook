@@ -8,3 +8,22 @@ breadcrumbs:
 .row
   .col-md-12
     h3 = current_page.data.title
+
+.row
+  form.form-horizontal role="form"
+    .form-group
+      label.control-label.col-md-3 for="recipient" Recipient:
+      .col-md-8
+        input type="text" class="form-control" id="recipient"
+    .form-group
+      label.control-label.col-md-3 for="topic" Topic:
+      .col-md-8
+        input type="text" class="form-control" id="topic"
+    .form-group
+      .col-md-9.col-md-offset-2
+        / p.bold
+        /   | Message:
+        textarea.form-control rows="10"
+    .form-group
+      .col-md-9.col-md-offset-2
+        a.btn.btn-primary.pull-right href="./index.html" Send message

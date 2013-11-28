@@ -1,0 +1,59 @@
+.dashboard-boxes
+  padding-top: 5px
+
+  *
+    box-sizing: border-box !important
+
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+.dashboard-box
+  display: block
+  width: 50%
+  float: left
+
+.dashboard-box__inner
+  display: block
+  margin: 20px 10px 0 0
+  padding: 30px 25px
+  border: 1px solid #ccc
+  border-radius: 3px
+  background: #fff
+  text-decoration: none !important
+
+  .dashboard-box:nth-of-type(even) &
+    margin-right: 0
+    margin-left: 10px
+
+  &:active,
+  &:hover
+    border: 2px solid #9dacca
+    padding: 29px 24px
+
+  &:active
+    box-shadow: inset 0 1px 2px #ccc
+
+.dashboard-box__title
+  position: relative
+  top: -3px
+  padding-bottom: 12px
+
+.dashboard-box__body
+  color: #333
+
+  b
+    font-weight: 500
+
+  .label
+    position: relative
+    top: -1px
+    background: #ccc
+
+.dashboard-box__feature
+  display: block
+  margin-top: 5px
+  border-top: 1px solid #eee
+  padding-top: 5px
+  color: #999

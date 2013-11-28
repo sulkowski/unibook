@@ -2,21 +2,40 @@
 title: Dashboard
 ---
 
-.row
-  .col-md-12
-    h3 = current_page.data.title
+h3 Welcome to Unibook
 
-.row
-  .col-md-6
-    .well
-      h3 Messages
-  .col-md-6
-    .well
-      h3 Current schedule
-  .col-md-6
-    .well
-      h3 Your index
-  .col-md-6
-    .well
-      h3 Requests to Dean's Office
-
+.dashboard-boxes
+  .dashboard-box
+    a.dashboard-box__inner href="/#{current_section}/schedule/"
+      h3.dashboard-box__title Current Schedule
+      .dashboard-box__body
+        | Next up in your schedule:
+        .dashboard-box__feature
+          span.label> LE
+          b> Numerical Methods
+          | on 15:15 at B-4, 273
+  .dashboard-box
+    a.dashboard-box__inner href="/#{current_section}/book/"
+      h3.dashboard-box__title Index Book
+      .dashboard-box__body
+        | The last received mark:
+        .dashboard-box__feature
+          span.label> EX
+          b> Mathematical Analysis:
+          | 4.5
+  .dashboard-box
+    a.dashboard-box__inner href="/#{current_section}/messages/"
+      h3.dashboard-box__title Messages
+      .dashboard-box__body
+        | You have 2 unread messages. The last one:
+        .dashboard-box__feature.dashboard-box__feature--italic
+          b> Paweł Sułkowski:
+          | Hey, did you pass AI? Just…
+  .dashboard-box
+    a.dashboard-box__inner href="/#{current_section}/requests/"
+      h3.dashboard-box__title Requests to Dean’s Office
+      .dashboard-box__body
+        | The status of your last request:
+        .dashboard-box__feature
+          b> Scolarship – Grades
+          | is still pending

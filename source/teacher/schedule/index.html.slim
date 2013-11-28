@@ -2,14 +2,17 @@
 title: Schedule
 ---
 
-h3 = current_page.data.title
+.row
+  .col-md-6
+    h3= current_page.data.title
+  .col-md-6
+    form.form-horizontal role="form"
+      .form-group
+        label.control-label.col-md-3.col-md-offset-3 for="filter" Filter:
+        .col-md-6
+          input.form-control type="search" id="filter"
 
-form.form-inline.pull-right role="form"
-  .form-group
-    input type="search" class="form-control" id="courses-filter" placeholder="Filter..."
-br
-
-table.table.table-striped.table-courses
+table.table.table-striped.table-courses data-filter="2 4 5" data-filter-type="3"
   thead
     tr
       th colspan="5"
@@ -25,24 +28,21 @@ table.table.table-striped.table-courses
       td 9:15 - 11:15
       td Mathematical Analysis
       td
-        span.label.label-info> EX
-        | Exercises
+        span.label.label-info EX
       td WIZ-08-123456
       td A-2, 448
     tr
       td 13:15 - 14:55
       td Multimedia Information Systems
       td
-        span.label.label-info> LA
-        | Labs
+        span.label.label-info LA
       td WIZ-08-123456
       td D-20, 311
     tr
       td 15:05 - 16:55
       td Discrete Mathematics
       td
-        span.label.label-info> EX
-        | Exercises
+        span.label.label-info EX
       td WIZ-08-123456
       td B-4, 214
   thead
@@ -62,32 +62,28 @@ table.table.table-striped.table-courses
       td 7:30 - 8:55
       td Theory of Probabilistic
       td
-        span.label.label-info> LE
-        | Lecture
+        span.label.label-info LE
       td WIZ-08-123456
       td C-1, 448
     tr
       td 11:15 - 13:00
       td Data Structures and Algorithms
       td
-        span.label.label-info> LA
-        | Labs
+        span.label.label-info LA
       td WIZ-08-123456
       td B-3, 12
     tr.success
       td 15:15 - 17:05
       td Numerical Methods
       td
-        span.label.label-info> LE
-        | Lecture
+        span.label.label-info LE
       td WIZ-08-123456
       td B-4, 273
     tr
       td 18:55 - 20:30
       td Operating Systems
       td
-        span.label.label-info> EX
-        | Exercises
+        span.label.label-info EX
       td WIZ-08-123456
       td B-4, 120
   thead
@@ -107,32 +103,29 @@ table.table.table-striped.table-courses
       td 11:15 - 13:00
       td Data Structures and Algorithms
       td
-        span.label.label-info> LE
-        | Lecture
+        span.label.label-info LE
       td WIZ-08-123456
       td B-4, 192
     tr
       td 13:15 - 14:55
       td Operating Systems
       td
-        span.label.label-info> LE
-        | Lecture
+        span.label.label-info LE
       td WIZ-08-123456
       td A-1, 13
     tr
       td 15:15 - 17:45
       td Introduction to Programming
       td
-        span.label.label-info> LA
-        | Labs
+        span.label.label-info LA
       td WIZ-08-123456
       td D-2, 401
-  thead
+  thead.empty
     tr
       th colspan="5"
         h4 Thurday
     tr
-  tbody
+  tbody.empty
     tr
       td.none colspan="5" There are no courses scheduled for this day.
   thead
@@ -152,23 +145,20 @@ table.table.table-striped.table-courses
       td 9:15 - 10:55
       td Object-Oriented Programming
       td
-        span.label.label-info> LA
-        | Labs
+        span.label.label-info LA
       td WIZ-08-123456
       td C-1, 448
     tr
       td 13:00 - 14:55
       td Data Structures and Algorithms
       td
-        span.label.label-info> LE
-        | Lecture
+        span.label.label-info LE
       td WIZ-08-123456
       td D-1, 442
     tr
       td 18:55 - 20:30
       td UI Development
       td
-        span.label.label-info> EX
-        | Exercises
+        span.label.label-info EX
       td WIZ-08-123456
       td B-2, 448

@@ -8,15 +8,19 @@ title: Index book
   .col-md-6
     form.form-horizontal role="form"
       .form-group
-        label.control-label.col-md-3.col-md-offset-3 for="select" Filter:
+        label.control-label.col-md-3.col-md-offset-3 for="select" Semester:
         .col-md-6
           select.form-control type="search" id="select"
             option.form-control value="w1" Winter 2010/2011
             option.form-control value="s1" Summer 2010/2011
             option.form-control value="w2" Winter 2011/2012
             option.form-control value="s2" Summer 2011/2012
+      .form-group
+        label.control-label.col-md-3.col-md-offset-3 for="filter" Filter:
+        .col-md-6
+          input.form-control type="search" id="filter"
 
-table.table.table-striped.table-courses
+table.table.table-striped.table-courses data-filter="1 2 4" data-filter-type="3"
   thead
     tr
       th Course ID

@@ -8,3 +8,25 @@ breadcrumbs:
 .row
   .col-md-12
     h3 = current_page.data.title
+
+.row
+  form.form-horizontal role="form"
+    .form-group
+      label.control-label.col-md-3 for="type" Type:
+      .col-md-7
+        select.form-control id="type"
+          option Scholarship - grades
+          option Scholarship - social
+          option Dormitory
+    .form-group
+      label.control-label.col-md-3 for="description" Description:
+      .col-md-7
+        textarea.form-control rows="10" id="description"
+    .form-group
+      .col-md-7.col-md-offset-3
+        p 
+          |  The data necessary for the request submission has been imported from your account.
+    .form-group
+      .col-md-7.col-md-offset-3
+        a.btn.btn-primary href="./preview.html" Preview
+        a.btn.btn-success.pull-right href="./index.html" Send request

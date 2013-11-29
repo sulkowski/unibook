@@ -6,8 +6,24 @@ breadcrumbs:
 ---
 
 .row
-  .col-md-12
+  .col-md-6
     h3 = current_page.data.title
+  .col-md-6
+    form.form-horizontal role="form"
+      .form-group
+        label.control-label.col-md-3.col-md-offset-3 for="filter" Filter:
+        .col-md-6
+          input.form-control type="search" id="filter"
+  .col-md-9
+    form.form-horizontal.form-inline role="form"
+      .form-group
+        label.control-label.col-md-5 for="enroll-by-code" Group code
+        .col-md-7
+          input.form-control type="input" id="enroll-by-code"
+      button.btn.btn-primary type="submit" Enroll
+  .col-md-3
+    a.btn.btn-primary.pull-right href="#" 
+      |  Load schedule draft
 
 table.table.table-striped
   thead

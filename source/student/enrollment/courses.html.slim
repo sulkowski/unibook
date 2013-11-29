@@ -14,10 +14,8 @@ breadcrumbs:
         label.control-label.col-md-3.col-md-offset-3 for="filter" Filter:
         .col-md-6
           input.form-control type="search" id="filter"
-    a.btn.btn-primary.pull-right href="#"
-      |  Save schedule draft
 
-table.table.table-striped
+table.table.table-striped.table-courses data-filter="2 4 6 7" data-filter-type="3"
   thead
     tr
       th colspan="7"
@@ -65,167 +63,167 @@ table.table.table-striped
       td P034910D
       td
         input type="checkbox"
+    thead
+      tr
+        th colspan="7"
+          h4 Thuesday
+      tr
+        th Time
+        th Course
+        th Type
+        th Conducted by
+        th ECTS
+        th Places
+        th Group code
+        th To draft
+    tbody
+      tr
+        td 7:30 - 8:55
+        td Theory of Probabilistic
+        td
+          span.label.label-info> LE
+        td Dr inż. Andrzej Węgierski
+        td 1
+        td 13/25
+        td P034920C
+        td
+          input type="checkbox"
+      tr
+        td 11:15 - 13:00
+        td Data Structures and Algorithms
+        td
+          span.label.label-info> LA
+        td Dr inż. Jan Angielski
+        td 4
+        td 1/25
+        td P034910C
+        td
+          input type="checkbox"
+      tr
+        td 15:15 - 17:05
+        td Numerical Methods
+        td
+          span.label.label-info> LE
+        td Dr inż. Wiesław Hiszpański
+        td 3
+        td 22/25
+        td A031910C
+        td
+          input type="checkbox"
+      tr
+        td 18:55 - 20:30
+        td Operating Systems
+        td
+          span.label.label-info> EX
+        td Dr inż. Franek Polski
+        td 5
+        td 13/25
+        td L034910C
+        td
+          input type="checkbox"
+    thead
+      tr
+        th colspan="7"
+          h4 Wednesday
+      tr
+        th Time
+        th Course
+        th Type
+        th Conducted by
+        th ECTS
+        th Places
+        th Group code
+        th To draft
+    tbody
+      tr
+        td 11:15 - 13:00
+        td Data Structures and Algorithms
+        td
+          span.label.label-info> LE
+        td Dr inż. Dominika Polska
+        td 2
+        td 13/25
+        td P034910C
+        td
+          input type="checkbox"
+      tr
+        td 13:15 - 14:55
+        td Operating Systems
+        td
+          span.label.label-info> LE
+        td Dr inż. Dominik Kosiński
+        td 1
+        td 21/25
+        td P034910L
+        td
+          input type="checkbox"
+      tr
+        td 15:15 - 17:45
+        td Introduction to Programming
+        td
+          span.label.label-info> LA
+        td Dr inż. Jan Ryba
+        td 5
+        td 7/25
+        td S034910C
+        td
+          input type="checkbox"
+    thead.empty
+      tr
+        th colspan="8"
+          h4 Thursday
+    tbody.empty
+      tr
+        td.none colspan="8" There are no courses scheduled for this day.
+    thead
+      tr
+        th colspan="7"
+          h4 Friday
+      tr
+        th Time
+        th Course
+        th Type
+        th Conducted by
+        th ECTS
+        th Places
+        th Group code
+        th To draft
+    tbody
+      tr
+        td 9:15 - 10:55
+        td Object-Oriented Programming
+        td
+          span.label.label-info> LA
+        td Dr inż. Jacek Tunezyjski
+        td 6
+        td 3/25
+        td P039910C
+        td
+          input type="checkbox"
+      tr
+        td 13:00 - 14:55
+        td Data Structures and Algorithms
+        td
+          span.label.label-info> LE
+        td Dr inż. Pawel Litewski
+        td 2
+        td 10/25
+        td P034910C
+        td
+           input type="checkbox"
+      tr
+        td 18:55 - 20:30
+        td UI Development
+        td
+          span.label.label-info> EX
+        td Dr inż. Edward Norweski
+        td 1
+        td 9/25
+        td Y234910C
+        td
+           input type="checkbox"
 
-table.table.table-striped
-  thead
-    tr
-      th colspan="7"
-        h4 Thuesday
-    tr
-      th Time
-      th Course
-      th Type
-      th Conducted by
-      th ECTS
-      th Places
-      th Group code
-      th To draft
-  tbody
-    tr
-      td 7:30 - 8:55
-      td Theory of Probabilistic
-      td
-        span.label.label-info> LE
-      td Dr inż. Andrzej Węgierski
-      td 1
-      td 13/25
-      td P034920C
-      td
-        input type="checkbox"
-    tr
-      td 11:15 - 13:00
-      td Data Structures and Algorithms
-      td
-        span.label.label-info> LA
-      td Dr inż. Jan Angielski
-      td 4
-      td 1/25
-      td P034910C
-      td
-        input type="checkbox"
-    tr
-      td 15:15 - 17:05
-      td Numerical Methods
-      td
-        span.label.label-info> LE
-      td Dr inż. Wiesław Hiszpański
-      td 3
-      td 22/25
-      td A031910C
-      td
-        input type="checkbox"
-    tr
-      td 18:55 - 20:30
-      td Operating Systems
-      td
-        span.label.label-info> EX
-      td Dr inż. Franek Polski
-      td 5
-      td 13/25
-      td L034910C
-      td
-        input type="checkbox"
-
-
-table.table.table-striped
-  thead
-    tr
-      th colspan="7"
-        h4 Wednesday
-    tr
-      th Time
-      th Course
-      th Type
-      th Conducted by
-      th ECTS
-      th Places
-      th Group code
-      th To draft
-  tbody
-    tr
-      td 11:15 - 13:00
-      td Data Structures and Algorithms
-      td
-        span.label.label-info> LE
-      td Dr inż. Dominika Polska
-      td 2
-      td 13/25
-      td P034910C
-      td
-        input type="checkbox"
-    tr
-      td 13:15 - 14:55
-      td Operating Systems
-      td
-        span.label.label-info> LE
-      td Dr inż. Dominik Kosiński
-      td 1
-      td 21/25
-      td P034910L
-      td
-        input type="checkbox"
-    tr
-      td 15:15 - 17:45
-      td Introduction to Programming
-      td
-        span.label.label-info> LA
-      td Dr inż. Jan Ryba
-      td 5
-      td 7/25
-      td S034910C
-      td
-        input type="checkbox"
-
-h4 Thursday
-p
-  |  There are no course for this day.
-br
-
-table.table.table-striped
-  thead
-    tr
-      th colspan="7"
-        h4 Friday
-    tr
-      th Time
-      th Course
-      th Type
-      th Conducted by
-      th ECTS
-      th Places
-      th Group code
-      th To draft
-  tbody
-    tr
-      td 9:15 - 10:55
-      td Object-Oriented Programming
-      td
-        span.label.label-info> LA
-      td Dr inż. Jacek Tunezyjski
-      td 6
-      td 3/25
-      td P039910C
-      td
-        input type="checkbox"
-    tr
-      td 13:00 - 14:55
-      td Data Structures and Algorithms
-      td
-        span.label.label-info> LE
-      td Dr inż. Pawel Litewski
-      td 2
-      td 10/25
-      td P034910C
-      td
-         input type="checkbox"
-    tr
-      td 18:55 - 20:30
-      td UI Development
-      td
-        span.label.label-info> EX
-      td Dr inż. Edward Norweski
-      td 1
-      td 9/25
-      td Y234910C
-      td
-         input type="checkbox"
+.row
+  .col-md-12
+    a.btn.btn-primary.pull-right.clearfix href="#"
+      |  Save scshedule draft

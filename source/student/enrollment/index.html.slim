@@ -34,7 +34,13 @@ table.table.table-striped
   .col-md-4.text-center
     a.btn.btn-primary href="./enroll.html" Enroll
 
-table.table.table-striped
+.row
+.row
+.row
+  .col-md-12
+    h4 Courses you are enrolled to:
+
+table.table.table-striped.table-courses
   thead
     tr
       th colspan="7"
@@ -75,8 +81,6 @@ table.table.table-striped
       td 8
       td 13/25
       td P034910D
-
-table.table.table-striped
   thead
     tr
       th colspan="7"
@@ -127,7 +131,6 @@ table.table.table-striped
       td 13/25
       td L034910C
 
-table.table.table-striped
   thead
     tr
       th colspan="7"
@@ -169,12 +172,14 @@ table.table.table-striped
       td 7/25
       td S034910C
 
-h4 Thursday
-p
-  |  There are no course for this day.
-br
+  thead.empty
+    tr
+      th colspan="8"
+        h4 Thursday
+  tbody.empty
+    tr
+      td.none colspan="8" There are no courses scheduled for this day.
 
-table.table.table-striped
   thead
     tr
       th colspan="7"

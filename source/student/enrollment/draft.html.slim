@@ -1,5 +1,5 @@
 ---
-title: Courses
+title: Schedule draft
 breadcrumbs:
   - Enrollment
   - Draft
@@ -15,7 +15,7 @@ breadcrumbs:
         .col-md-6
           input.form-control type="search" id="filter"
 
-table.table.table-striped
+table.table.table-striped.table-courses data-filter="2 4 6 7" data-filter-type="3"
   thead
     tr
       th colspan="7"
@@ -64,7 +64,7 @@ table.table.table-striped
       td
         a.btn.btn-xs.btn-warning.dropdown-toggle Remove
 
-table.table.table-striped
+
   thead
     tr
       th colspan="7"
@@ -125,7 +125,6 @@ table.table.table-striped
         a.btn.btn-xs.btn-warning.dropdown-toggle Remove
 
 
-table.table.table-striped
   thead
     tr
       th colspan="7"
@@ -174,12 +173,14 @@ table.table.table-striped
       td
         a.btn.btn-xs.btn-warning.dropdown-toggle Remove
 
-h4 Thursday
-p
-  |  There are no course for this day.
-br
+  thead.empty
+    tr
+      th colspan="8"
+        h4 Thursday
+  tbody.empty
+    tr
+      td.none colspan="8" There are no courses scheduled for this day.
 
-table.table.table-striped
   thead
     tr
       th colspan="7"

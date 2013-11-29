@@ -1,0 +1,45 @@
+---
+title: Student's name
+breadcrumbs:
+  - Grading
+  - Group details
+  - Student
+---
+
+.row
+  .col-md-12
+    h3= current_page.data.title
+.row
+  .col-md-3
+    p.text-right.bold
+      | Course:
+  .col-md-6
+    p
+      | Mathematical Analysis 1
+.row
+  .col-md-3
+    p.text-right.bold
+      | Group:
+  .col-md-6
+    p
+      | ABC01234
+
+form.form-horizontal role="form"
+  .form-group
+    label.control-label.col-md-3 for="grade-type" Grade type:
+    .col-md-6
+      select.form-control id="grade-type"
+        option.form-control value="le" Regular
+        option.form-control value="ex" Exam
+  .form-group
+    label.control-label.col-md-3 for="grade" Grade:
+    .col-md-2
+      input type="number" class="form-control" id="grade" value="dominik@porada.co"
+  .form-group
+    .col-md-9.text-right
+        a.btn.btn-success href="" Grade
+ul.pager
+  li.previous
+    a href="#" &larr; Previous
+  li.next
+    a href="#" Next &rarr;

@@ -17,11 +17,21 @@ function switchLang(elem) {
 
 
 $(function () {
-    $('#myModal3').on('hidden.bs.modal', function () {
-    go("./index.html");
+
+  $('#login').click(function () {
+    // alert($("#username").val());
+    // && $('#password').val() == "1234"
+    if($('#username').val() == "teacher") {
+      $("#login-form").attr("action", "teacher");
+    } else if ($('#username').val() == "student"){
+      $("#login-form").attr("action", "student");
+    }
   })
+  $('#myModal3').on('hidden.bs.modal', function () {
+    go("./index.html");
+  });
   $('#myModal2').on('hidden.bs.modal', function () {
     go("../index.html");
-  })
+  });
 });
 

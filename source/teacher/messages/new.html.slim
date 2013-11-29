@@ -5,4 +5,34 @@ breadcrumbs:
   - New message
 ---
 
-= current_page.data.title
+.row
+  .col-md-12
+    h3 = current_page.data.title
+
+.row
+  form.form-horizontal role="form"
+    .form-group
+      label.control-label.col-md-3 for="recipient" Recipient:
+      .col-md-8
+        input type="text" class="form-control" id="recipient"
+    .form-group
+      label.control-label.col-md-3 for="topic" Topic:
+      .col-md-8
+        input type="text" class="form-control" id="topic"
+    .form-group
+      .col-md-9.col-md-offset-2
+        / p.bold
+        /   | Message:
+        textarea.form-control rows="10"
+    .form-group
+      .col-md-9.col-md-offset-2
+        a.btn.btn-primary.pull-right href="#myModal3" data-toggle="modal" data-target="#myModal3" Send message
+
+
+div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-body"
+        p.text-left Message has been sent.
+      div.text-center class="modal-footer"
+        button type="button" class="btn btn-default" data-dismiss="modal" Close

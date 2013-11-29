@@ -1,0 +1,55 @@
+---
+title: Messages
+breadcrumbs:
+  - Messages
+  - Message
+---
+
+.row
+  .col-md-6
+    h3 = current_page.data.title
+  .col-md-6
+    a.btn.btn-primary.pull-right href="./new.html" Compose new message
+
+.row
+  .col-md-3
+    p.bold From:
+    p Dominika Cis
+    p.bold Yesterday
+    br
+    p.bold Actions:
+    a href="../new.html" Reply
+    br
+    a href="../index.html" Delete
+    br
+    br
+    a href="#" Mark as unread
+    / br
+    / a href="#" Report message
+
+  .col-md-9
+    .row
+      .col-md-12
+        h3 AI - Labs
+    .row
+      .col-md-12
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non dignissim dolor, eget fermentum mauris. Sed nec congue leo, a hendrerit mauris. Nulla ultricies accumsan nibh at rhoncus. Phasellus consectetur ante ut ipsum dapibus, quis malesuada turpis laoreet. Integer rutrum urna eros, nec hendrerit metus pharetra a. Nunc tempus libero risus, in malesuada felis porta a. Suspendisse dignissim bibendum nibh sed fringilla. Vestibulum adipiscing tempus convallis. Vestibulum suscipit ipsum vitae sodales feugiat.
+    .row
+      .col-md-12
+        h4 Reply to: "AI - Labs"
+    .row
+      .col-md-12
+        textarea.form-control rows="7"
+    .row
+      .col-md-12
+        a.btn.btn-primary.pull-right href="#myModal2" data-toggle="modal" data-target="#myModal2" Send response
+
+
+div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-body"
+        p.text-left Message has been sent.
+      div.text-center class="modal-footer"
+        button type="button" class="btn btn-default" data-dismiss="modal" Close

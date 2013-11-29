@@ -26,4 +26,13 @@ breadcrumbs:
         textarea.form-control rows="10"
     .form-group
       .col-md-9.col-md-offset-2
-        a.btn.btn-primary.pull-right href="./index.html" Send message
+        a.btn.btn-primary.pull-right href="#myModal3" data-toggle="modal" data-target="#myModal3" Send message
+
+
+div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-body"
+        p.text-left Message has been sent.
+      div.text-center class="modal-footer"
+        button type="button" class="btn btn-default" data-dismiss="modal" Close

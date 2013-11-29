@@ -9,7 +9,7 @@ breadcrumbs:
     h3 = current_page.data.title
   .col-md-6
     a.btn.btn-primary.pull-right href="#" 
-      |  A
+      |  New request
     br
     br
     form.form-horizontal role="form"
@@ -27,21 +27,21 @@ table.table.table-striped
       th Studies
       th Status
   tbody
-    tr.tr-link onclick="go('./details.html')"
+    tr.tr-link onclick="go('./pending.html')"
       td 24812/11/11/13
       td 11/11/2013
       td Scolarship - Grades
       td W8-INFAN-0123
       td
         span.label.label-primary< Pending
-    tr.tr-link onclick="go('./details.html')"
+    tr.tr-link onclick="go('./accepted.html')"
       td 24509/27/10/13
       td 27/10/2013
       td Scolarship - Social
       td W8-INFAN-0123
       td
         span.label.label-success< Accepted
-    tr.tr-link onclick="go('./details.html')"
+    tr.tr-link onclick="go('./canceled.html')"
       td 00012/01/02/12
       td 01/02/2012
       td Dormitory

@@ -45,9 +45,6 @@ input[type=number]::-webkit-outer-spin-button
   -webkit-appearance: none
   margin: 0
 
-.unread *
-  background: #bcd6ec !important
-
 .tr-link
   cursor: pointer
 
@@ -85,3 +82,21 @@ textarea
 
 .select2-container
   width: 100%
+
+body[class*="messages"]
+  .nav-tabs
+    a
+      font-weight: bold
+      padding-left: 40px
+      padding-right: 40px
+
+    & + *
+      background: #fff
+      border: 1px solid #ddd
+      border-top: none
+      border-radius: 0 0 2px 2px
+      padding: 25px
+
+  .unread td
+    font-weight: bold
+    background-color: #f2efca !important

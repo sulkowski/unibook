@@ -8,5 +8,6 @@ gem 'slim'
 gem 'rails-assets-jquery', require: false
 gem 'rails-assets-angular', '~> 1.2.0', require: false
 gem 'bootstrap-sass', '~> 3.0.2', require: false
+gem 'select2-rails', require: false
 
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]

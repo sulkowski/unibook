@@ -1,8 +1,17 @@
 //= require jquery
 //= require bootstrap
 //= require angular
+//= require select2
 //= require_self
 //= require_tree .
+
+
+$(function() {
+  $('[name=recipients]').select2({
+    placeholder: 'One or more'
+  });
+});
+
 
 function go(url) {
   document.location.href = url;
@@ -34,4 +43,3 @@ $(function () {
     go("../index.html");
   });
 });
-

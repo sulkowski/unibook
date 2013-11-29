@@ -12,9 +12,8 @@ breadcrumbs:
 .row
   form.form-horizontal role="form"
     .form-group
-      label.control-label.col-md-3 for="recipient" Recipient:
-      .col-md-8
-        input type="text" class="form-control" id="recipient"
+      label.control-label.col-md-3 for="recipient" Recipients:
+      .col-md-8= partial 'shared/recipients'
     .form-group
       label.control-label.col-md-3 for="topic" Topic:
       .col-md-8

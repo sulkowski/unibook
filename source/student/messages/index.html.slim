@@ -21,26 +21,20 @@ ul.nav.nav-tabs
         tr
           th From
           th Topic
+          th Date
       tbody
         tr.tr-link.unread onclick="go('./inbox/1.html')"
           td Paweł Sułkowski
           td What's up?
+          td TODAY
         tr.tr-link onclick="go('./inbox/2.html')"
           td Dominika Cis
           td AI - Labs
+          td 25.11.2013
         tr.tr-link onclick="go('./inbox/3.html')"
           td Mateusz Tuński
           td UI Dev - Lab 9 progress
-    .row
-      .col-md-12.text-right
-        a href="#myModal" data-toggle="modal" data-target="#myModal" Older messages
-        div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-          div class="modal-dialog"
-            div class="modal-content"
-              div class="modal-body"
-                p.text-left You don't have any older messages to show.
-              div class="modal-footer"
-                button type="button" class="btn btn-default" data-dismiss="modal" Close
+          td 22.11.2013
 
   .tab-pane id="sent"
     table.table.table-striped
@@ -48,20 +42,14 @@ ul.nav.nav-tabs
         tr
           th To
           th Topic
+          th Date
       tbody
         tr.tr-link onclick="go('./sent/1.html')"
           td Paweł Sułkowski
           td Re: What's up?
+          td TODAY
         tr.tr-link onclick="go('./sent/2.html')"
           td Dr inż. Adam Polski
           td Mathematical Analysis I - Exercises moved?
-    .row
-      .col-md-12.text-right
-        a href="#myModal1" data-toggle="modal" data-target="#myModal1" Older messages
-        div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-          div class="modal-dialog"
-            div class="modal-content"
-              div class="modal-body"
-                p.text-left You don't have any older messages to show.
-              div.text-center class="modal-footer"
-                button type="button" class="btn btn-default" data-dismiss="modal" Close
+          td TODAY
+
